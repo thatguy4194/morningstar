@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdbool.h>
 
 void getTime() {
     printf("Today's Date:\n");
@@ -9,4 +10,13 @@ void getTime() {
     time(&rawtime);
     date = localtime(&rawtime);
     printf("%s",asctime(date));
+}
+
+int main() {
+    FILE *file = fopen("morningstar.conf","r");
+    if (file == NULL) {
+       printf("lol u suck at filing");
+       return 1;
+    }
+
 }
