@@ -3,9 +3,8 @@
 
 int main() {
     char userInput[100];
-    char * userInputPointer = &userInput;
-    scanf("%s", *userInputPointer);
-    printf("%s\n", *userInputPointer);
+    scanf("%s", userInput);
+    printf("%s\n", userInput);
     printf("Today's Date:\n");
     // Start by telling the time
     time_t rawtime;
