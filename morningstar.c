@@ -2,6 +2,10 @@
 #include <time.h>
 
 int main() {
+    char userInput[100];
+    char * userInputPointer = &userInput;
+    scanf("%s", *userInputPointer);
+    printf("%s\n", *userInputPointer);
     printf("Today's Date:\n");
     // Start by telling the time
     time_t rawtime;
