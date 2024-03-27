@@ -2,7 +2,7 @@
 #include <time.h>
 
 int main() {
-    printf("Hello World!\n");
+    printf("Today's Date:\n");
     // Start by telling the time
     time_t rawtime;
     struct tm *date;
