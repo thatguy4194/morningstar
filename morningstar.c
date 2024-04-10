@@ -10,6 +10,7 @@ void getTime() {
     time(&rawtime);
     date = localtime(&rawtime);
     printf("%s",asctime(date));
+
 }
 
 int main() {
@@ -17,6 +18,9 @@ int main() {
     if (file == NULL) {
        printf("lol u suck at filing");
        return 1;
+    }
+    if (file != NULL) {
+        printf("File is present...");
     }
 
 }
